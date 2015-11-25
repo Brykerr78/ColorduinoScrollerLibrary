@@ -3,14 +3,10 @@
 #include <Scroll.h>
 
 void setup(){
-
-
 }
+
 void loop(){
 //Scroll("String!", delay, textcolred, textcolgreen, textcolblue, bgcolred, bgcolgreen, bgcolblue, displaynumber)
-  Scroll("Scrolling Text!", 100, 255, 255, 255, 0, 0, 0, 1);
-//Maximum of 20 Characters in one Instance of "Scroll"
+  Scroll("The time has come, the walrus said", 150, 0, 0, 255, 0, 0, 0, 1);
+  Scroll("Green", 150, 0, 255, 0, 0, 0, 0, 1);
 }
-
-
-
