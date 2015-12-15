@@ -5,6 +5,7 @@ A add on library for the GFX Library by Adafruit and the Colorduino GFX Library 
 
 - Author: Zane Carter (pretty did much everything)
 - Co-Author/Major Modifier: Jack Broadway (oooo a library)
+- Contributer/Code Cleaner: maujabur
 
 Features
 ========
