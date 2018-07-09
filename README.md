@@ -12,30 +12,30 @@ Relies on Colorduino Library, using our modified fork: https://github.com/Electr
 
 ## Constructor
 Constructor takes no arguments
-```cplusplus
+```c++
 Scroll myScroller
 ```
 
 ## setText(String text)
 Sets the text used for scrolling, defaults to "EXAMPLE"
-```cplusplus
+```c++
 myScroller.setText("HELLO GITHUB");
 ```
 
 ## setColor(int r, int g, int b)
 Sets the color of the scrolling text, defaults to green
-```cplusplus
+```c++
 myScroller.setColor(255,0,0);
 ```
 
 ## setSpeed(int speed)
 Sets the speed between each column change, defaults to 250ms
-```cplusplus
+```c++
 myScroller.setSpeed(250);
 ```
 # Example
 Here is it as currently in Simple_Scroll.ino
-```cplusplus
+```c++
 #include <Scroll.h>
 
 Scroll myScroll;
