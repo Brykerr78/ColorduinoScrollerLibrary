@@ -1,0 +1,3 @@
+Scroll KEYWORD1
+setScrollSpeed KEYWORD2
+setScrollText KEYWORD2

@@ -1,11 +1,8 @@
 ColorduinoScrollerLibrary
 =========================
 
-A add on library for the GFX Library by Adafruit and the Colorduino GFX Library by DinoTools
-
-- Author: Zane Carter (pretty did much everything)
-- Co-Author/Major Modifier: Jack Broadway (oooo a library)
-- Contributer/Code Cleaner: maujabur
+A simple library for scrolling text on a Colorduino.
+Updated for Arduino: 1.8.5
 
 Features
 ========
@@ -17,12 +14,4 @@ Features
 Libraries
 =========
 
-Uses 2 libraries:
-
-- The adafruit GFX Library: https://github.com/adafruit/Adafruit-GFX-Library
-- The Colorduino GFX Library: https://github.com/DinoTools/Colorduino_GFX
-
-TODO
-====
-
-- Add individual letter colors []
+Relies on Colorduino Library, using our modified fork: https://github.com/Electromondo-Coding/Colorduino
