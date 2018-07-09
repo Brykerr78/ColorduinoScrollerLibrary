@@ -2,20 +2,33 @@
 
 extern const unsigned char font8_8[92][8];
 
+// Constructor to initiate colorduino and populate defaults
 Scroll::Scroll(){
 	Colorduino.Init();
 	_scrollSpeed = 250;
 	_scrollText = "EXAMPLE";
-	
+	_scrollColor.r = 0;
+	_scrollColor.g = 255;
+	_scrollColor.b = 0;
 	unsigned char whiteBalVal[3] = {36,63,63};
 	Colorduino.SetWhiteBal(whiteBalVal);
 }
-void Scroll::setScrollSpeed(int scrollSpeed){
+
+// Sets the private scrollspeed variable
+void Scroll::setSpeed(int scrollSpeed){
 	_scrollSpeed = scrollSpeed;
 }
-void Scroll::setScrollText(String text){
+
+// Sets the private scroll text variable
+void Scroll::setText(String text){
 	_scrollText = text;
 }
+void Scroll::setColor(int r, int g, int b){
+	_scrollColor.r = r;
+	_scrollColor.g = g;
+	_scrollColor.b = b;
+}
+// Private function to draw a character to the display buffer
 void Scroll::_dispDrawChar(char chr,unsigned char R,unsigned char G,unsigned char B, char bias)
 {
   unsigned char cur_char_row;
@@ -70,7 +83,7 @@ void Scroll::run(){
 		_dispBlank();
 		for(int cur_char=0; cur_char < num_char; cur_char++){
 			int cur_char_offset = i-((num_char-cur_char)*CHAR_WIDTH);
-			_dispDrawChar(_scrollText.charAt(cur_char),0,0,255,cur_char_offset);
+			_dispDrawChar(_scrollText.charAt(cur_char),_scrollColor.r,_scrollColor.g,_scrollColor.b,cur_char_offset);
 		}
 		Colorduino.FlipPage();
 		delay(_scrollSpeed);

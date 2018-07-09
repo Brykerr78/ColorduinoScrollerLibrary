@@ -1,3 +1,4 @@
 Scroll KEYWORD1
-setScrollSpeed KEYWORD2
-setScrollText KEYWORD2
+setSpeed KEYWORD2
+setText KEYWORD2
+run KEYWORD2

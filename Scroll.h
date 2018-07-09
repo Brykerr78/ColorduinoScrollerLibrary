@@ -13,12 +13,14 @@ class Scroll
 {
   public:
     Scroll();
-	void setScrollSpeed(int scrollSpeed);
-	void setScrollText(String text);
+	void setSpeed(int scrollSpeed);
+	void setText(String text);
+	void setColor(int r, int g, int b);
 	void run();
   private:
 	int _scrollSpeed;
 	String _scrollText;
+	ColorRGB _scrollColor;
     void _dispDrawChar(char chr,unsigned char R,unsigned char G,unsigned char B, char bias);
 	void _dispBlank();
 };
